@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sagarmatha — A Field Guide to Mount Everest, Nepal</title>
+  <meta name="description" content="An interactive field guide to Mount Everest: the 8,848.86-metre roof of the world, its Sherpa people, the Southeast Ridge climb from Base Camp to the summit, and a century of records." />
+  <meta property="og:title" content="Sagarmatha — A Field Guide to Mount Everest" />
+  <meta property="og:description" content="Trace the climb from Base Camp to the 8,848.86-metre summit, meet the Sherpa record-holders of the Khumbu, and read a century of Everest history." />
+  <meta property="og:image" content="assets/hero-everest.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 4 4 28h24L16 4z' fill='%23e8a852'/%3E%3Cpath d='M16 12 11 22h10L16 12z' fill='%23070b14'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container-wide site-header__inner">
+      <a class="brand" href="#top">Sagarmatha<span>.</span></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#numbers">Numbers</a>
+        <a href="#climb">The Climb</a>
+        <a href="#people">The People</a>
+        <a href="#death-zone">Death Zone</a>
+        <a href="#chronicle">Chronicle</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </div>
+    <nav class="site-nav--mobile container-wide" aria-label="Primary, mobile">
+      <a href="#numbers">Numbers</a>
+      <a href="#climb">The Climb</a>
+      <a href="#people">The People</a>
+      <a href="#death-zone">Death Zone</a>
+      <a href="#chronicle">Chronicle</a>
+      <a href="#sources">Sources</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__media">
+        <img src="assets/hero-everest.webp" alt="The Everest massif at dawn, its summit pyramid catching pink-gold alpenglow above a sea of clouds under a deep indigo sky" width="1916" height="821" fetchpriority="high" />
+      </div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="container-wide">
+        <div class="hero__inner">
+          <span class="kicker">Nepal · Mahalangur Himalaya · 27.99°N 86.93°E</span>
+          <h1>Sagarmatha</h1>
+          <p class="hero__sub">The roof of the world, measured to the centimetre.</p>
+          <p class="hero__lede">
+            In Nepal they call it <strong>Sagarmatha</strong>, the head of the sky. Tibetans call it
+            <strong>Chomolungma</strong>, goddess mother of the world. The rest of the planet knows it as
+            Mount Everest — 8,848.86 metres of rock, ice and jet-stream wind on the border between
+            Nepal and Tibet. This is a field guide to the highest place on Earth: how it got its
+            height, who climbs it, and what the climb costs.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#climb">Begin the climb</a>
+            <a class="btn btn--ghost" href="#chronicle">Read the chronicle</a>
+          </div>
+        </div>
+        <div class="hero__meta" role="list">
+          <span role="listitem">8,848.86 m</span>
+          <span role="listitem">First ascent 29 May 1953</span>
+          <span role="listitem">Southeast Ridge · Nepal</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NUMBERS ============ -->
+    <section class="section container-wide" id="numbers">
+      <div class="section-head reveal">
+        <span class="kicker">By the numbers</span>
+        <h2>The mountain, measured</h2>
+        <p>Everest's height is not a constant. It is a negotiation between moving continents, earthquakes, monsoon snowfall and the patience of surveyors.</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat stat--feature reveal">
+          <span class="stat__value" data-count="8848.86" data-decimals="2">8,848.86</span>
+          <span class="stat__label">Metres above sea level</span>
+          <span class="stat__note">The official snow height, jointly surveyed by Nepal and China and announced on 8 December 2020 — the first figure both countries have ever agreed on.</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__value" data-count="29032">29,032</span>
+          <span class="stat__label">Feet</span>
+          <span class="stat__note">About 86 cm taller than the 1954 Survey of India figure that stood, unchallenged, for 66 years.</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__value" data-count="60" data-suffix=" million">60 million</span>
+          <span class="stat__label">Years of uplift</span>
+          <span class="stat__note">Since the Indian plate began colliding with Eurasia, folding the Himalaya up from the floor of the ancient Tethys Sea.</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__value" data-count="4" data-suffix=" mm">4 mm</span>
+          <span class="stat__label">Growth per year</span>
+          <span class="stat__note">The collision continues. The Himalaya is still being pushed skyward, roughly the width of a grain of rice each year.</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__value">8 <span style="color: var(--color-text-faint); font-size: 0.55em;">of</span> 14</span>
+          <span class="stat__label">Eight-thousanders in Nepal</span>
+          <span class="stat__note">Eight of the fourteen peaks on Earth above 8,000 m stand in Nepal. Everest, the highest, anchors the Mahalangur Himal.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE CLIMB ============ -->
+    <section class="section climb-section" id="climb">
+      <div class="container-wide">
+        <div class="section-head reveal">
+          <span class="kicker">The Southeast Ridge</span>
+          <h2>The climb, waypoint by waypoint</h2>
+          <p>Almost every summit follows the route Hillary and Norgay opened in 1953. From Base Camp to the top is barely 20 kilometres — but 3,485 vertical metres, the last thousand of them above the altitude where the human body begins to die. Explore the route.</p>
+        </div>
+
+        <div class="chart-layout">
+          <div class="chart-card reveal">
+            <div id="climb-chart" class="chart-scroll" role="group" aria-label="Interactive elevation profile of the Everest Southeast Ridge route"></div>
+            <p class="chart-caption">Elevation profile, Base Camp to summit. Dashed line: 8,000 m, the edge of the death zone. On small screens, swipe the chart sideways. Select or tab through the waypoints for detail.</p>
+          </div>
+
+          <aside class="waypoint reveal" aria-live="polite">
+            <p class="waypoint__elev" id="wp-elev">5,364 m</p>
+            <h3 class="waypoint__name" id="wp-name">Base Camp</h3>
+            <p class="waypoint__desc" id="wp-desc">A tent city carved into the rubble of the Khumbu Glacier: bakeries, helicopter pads, a stone-chip hospital. Every one of the thousands of summits in Everest's history began as a walk through this village of nylon.</p>
+            <div class="waypoint__meter">
+              <div class="meter"><div class="meter__fill" id="wp-meter" style="width: 0%"></div></div>
+              <div class="meter__labels"><span>5,364 m</span><span>8,849 m</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ICEFALL SPLIT ============ -->
+    <section class="section container-wide">
+      <div class="split">
+        <div class="split__body reveal">
+          <span class="kicker">Waypoint · 5,800 m</span>
+          <h2>The Icefall</h2>
+          <p>Between Base Camp and Camp I the route crosses the <strong>Khumbu Icefall</strong> — a two-kilometre chaos of ice blocks the size of houses, shifting and collapsing on a glacier that moves up to a metre a day.</p>
+          <p>Climbers pass through in the dark, before the sun softens the seracs, over aluminium ladders lashed horizontally across crevasses. For the Sherpa staff, who cross it dozens of times a season carrying loads, it is statistically the deadliest hour on the mountain.</p>
+        </div>
+        <figure class="split__media reveal">
+          <img src="assets/khumbu-icefall.webp" alt="Climbers crossing a deep blue crevasse in the Khumbu Icefall on aluminium ladders beneath towering seracs" width="1024" height="1536" loading="lazy" decoding="async" />
+          <figcaption>The Khumbu Icefall, the moving obstacle course between Base Camp and Camp I.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ VILLAGE BLEED ============ -->
+    <section class="bleed" aria-label="The Khumbu valley">
+      <div class="bleed__media">
+        <img src="assets/khumbu-village.webp" alt="A Sherpa village at dusk: stone houses with warm lit windows, prayer flags across the rooftops, snow peaks behind" width="1536" height="1024" loading="lazy" decoding="async" />
+      </div>
+      <div class="bleed__scrim" aria-hidden="true"></div>
+      <div class="container-wide">
+        <div class="bleed__caption">
+          <h2>The people of the Khumbu</h2>
+          <p>Below the ice, life runs on barley, potatoes, yaks and prayer flags. The high villages of the Everest region — Namche Bazaar, Khumjung, Thame — sit above 3,400 m, an economy built around the mountain.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PEOPLE ============ -->
+    <section class="section container-wide" id="people">
+      <div class="split split--flip">
+        <figure class="split__media reveal">
+          <img src="assets/prayer-flags.webp" alt="Colourful prayer flags strung on poles in front of a Himalayan monastery, with Everest's peaks in evening alpenglow behind" width="1536" height="1024" loading="lazy" decoding="async" />
+          <figcaption>Prayer flags carry mantras on the wind, one for every pass and viewpoint.</figcaption>
+        </figure>
+        <div class="split__body reveal">
+          <span class="kicker">The Sherpa</span>
+          <h2>Not a job title</h2>
+          <p>"Sherpa" is an ethnicity, not an occupation. The Sherpa people migrated from eastern Tibet into these valleys some five centuries ago, farming at altitudes where most lowlanders cannot sleep, practising Tibetan Buddhism and trading across passes that mapmakers called impossible.</p>
+          <p>When Everest opened to foreign expeditions in 1950, they became the backbone of every climb — as porters, then as the world's finest high-altitude mountaineers. <strong>Tenzing Norgay</strong>, who stood on the summit with Hillary in 1953, remains the most famous. <strong>Kami Rita Sherpa</strong>, born in the village of Thame, has now climbed the mountain 32 times — more than any human in history. No summit on Everest has ever been achieved without Nepali hands on the ropes.</p>
+        </div>
+      </div>
+
+      <div class="records-grid">
+        <div class="record reveal">
+          <span class="record__value" data-count="32">32</span>
+          <span class="record__label">Summits, one person</span>
+          <span class="record__note">Kami Rita Sherpa, most recently on 17 May 2026. His first was in 1994, aged 24.</span>
+        </div>
+        <div class="record reveal">
+          <span class="record__value" data-count="13737">13,737</span>
+          <span class="record__label">Recorded ascents</span>
+          <span class="record__note">By 7,563 different people through December 2025, per the Himalayan Database.</span>
+        </div>
+        <div class="record reveal">
+          <span class="record__value" data-count="232">232</span>
+          <span class="record__label">Climbs without oxygen</span>
+          <span class="record__note">Since Messner and Habeler proved it possible in 1978 — fewer than 2% of all summits.</span>
+        </div>
+        <div class="record reveal">
+          <span class="record__value">1.1%</span>
+          <span class="record__label">Death rate</span>
+          <span class="record__note">Of everyone who climbs above Base Camp. Real, but smaller than the legend suggests.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DEATH ZONE ============ -->
+    <section class="section container-wide" id="death-zone">
+      <div class="split">
+        <div class="split__body reveal">
+          <span class="kicker">Above 8,000 metres</span>
+          <h2>The death zone</h2>
+          <p>Above roughly 8,000 metres the air holds about a third of its sea-level oxygen, and no one acclimatises there — the body is dying, minute by minute, while it moves. Climbers call it the death zone, and every hour spent above it is borrowed.</p>
+          <p>The summit itself is guarded by weather: the jet stream parks itself on the peak for most of the year at hurricane force. The entire climbing season is the brief May window when the stream shifts north — and the queues that form on summit morning are what happens when hundreds of people's weather forecasts agree.</p>
+          <p>So climbers leave the South Col at midnight, headlamps in a line, chasing a dawn they cannot afford to miss. The descent, exhausted, is where most deaths happen.</p>
+        </div>
+        <figure class="split__media reveal">
+          <img src="assets/summit-ridge.webp" alt="A line of mountaineers with headlamps climbing the final snow ridge of Everest at night beneath the Milky Way" width="1024" height="1536" loading="lazy" decoding="async" />
+          <figcaption>Midnight on the Southeast Ridge: the summit bid begins in the dark.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ CHRONICLE ============ -->
+    <section class="section container" id="chronicle">
+      <div class="section-head reveal">
+        <span class="kicker">1852 → 2026</span>
+        <h2>One hundred years of the highest place</h2>
+        <p>The modern history of Everest: a surveyor's arithmetic, a coronation-morning telegram, and a record that keeps being broken by the same pair of boots.</p>
+      </div>
+      <ol class="timeline" role="list">
+        <li class="timeline-entry reveal">
+          <p class="timeline-entry__year">1852</p>
+          <p class="timeline-entry__text">In the Survey of India's office in Kolkata, Bengali mathematician <strong>Radhanath Sikdar</strong> works through the trigonometry and identifies Peak XV as the highest point on Earth.</p>
+        </li>
+        <li class="timeline-entry reveal">
+          <p class="timeline-entry__year">1865</p>
+          <p class="timeline-entry__text">The Royal Geographical Society names the peak after <strong>Sir George Everest</strong>, a former Surveyor General of India — a man who never saw it. The mountain is far older than every name it carries.</p>
+        </li>
+        <li class="timeline-entry reveal">
+          <p class="timeline-entry__year">1921</p>
+          <p class="timeline-entry__text">The first British reconnaissance expedition reaches the North Col, opening the era of serious attempts from the Tibetan side.</p>
+        </li>
+        <li class="timeline-entry reveal">
+          <p class="timeline-entry__year">29 May 1953</p>
+          <p class="timeline-entry__text"><strong>Edmund Hillary</strong> of New Zealand and <strong>Tenzing Norgay</strong>, a Sherpa, stand on the summit via the Southeast Ridge. The coded telegram reaches London on the eve of Elizabeth II's coronation.</p>
+        </li>
+        <li class="timeline-entry reveal">
+          <p class="timeline-entry__year">1975</p>
+          <p class="timeline-entry__text"><strong>Junko Tabei</strong> of Japan becomes the first woman to summit Everest, twelve days after being buried by an avalanche at Camp II.</p>
+        </li>
+        <li class="timeline-entry reveal">
+          <p class="timeline-entry__year">1978</p>
+          <p class="timeline-entry__text"><strong>Reinhold Messner</strong> and <strong>Peter Habeler</strong> climb without supplemental oxygen — proving the death zone survivable, barely, on lungpower alone.</p>
+        </li>
+        <li class="timeline-entry reveal">
+          <p class="timeline-entry__year">1980</p>
+          <p class="timeline-entry__text">Messner returns to climb Everest <strong>solo</strong>, from Tibet, in monsoon season, still without oxygen. No one has repeated anything quite like it.</p>
+        </li>
+        <li class="timeline-entry reveal">
+          <p class="timeline-entry__year">1996</p>
+          <p class="timeline-entry__text">A single storm kills eight climbers in the death zone and begins the world's argument about what commercial expeditions have made of the mountain.</p>
+        </li>
+        <li class="timeline-entry reveal">
+          <p class="timeline-entry__year">2014–2015</p>
+          <p class="timeline-entry__text">An icefall avalanche kills <strong>16 Sherpa staff</strong> in a single day; a year later an earthquake-triggered avalanche sweeps Base Camp, the mountain's deadliest day.</p>
+        </li>
+        <li class="timeline-entry reveal">
+          <p class="timeline-entry__year">8 Dec 2020</p>
+          <p class="timeline-entry__text">Nepal and China jointly announce a revised official height: <strong>8,848.86 m</strong>, ending a decades-long dispute over rock versus snow.</p>
+        </li>
+        <li class="timeline-entry reveal">
+          <p class="timeline-entry__year">17 May 2026</p>
+          <p class="timeline-entry__text"><strong>Kami Rita Sherpa</strong>, 56, summits for the 32nd time, extending a record that no climber on Earth is close to touching.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="section sources-section" id="sources">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Field notes</span>
+          <h2>Sources</h2>
+        </div>
+        <ul class="sources-list reveal" role="list">
+          <li>Height & 2020 re-measurement — <a href="https://www.bbc.com/news/world-asia-55218443" target="_blank" rel="noopener noreferrer">BBC News</a>, <a href="https://apnews.com/article/science-nepal-china-58bae27255ab0865f97c303c4ebc3aa8" target="_blank" rel="noopener noreferrer">Associated Press</a></li>
+          <li>Summit, ascent and fatality statistics — <a href="https://www.alanarnette.com/everest/everest.php" target="_blank" rel="noopener noreferrer">Alan Arnette: Everest by the Numbers</a> and the <a href="https://himalayan-database.climbing-history.org/" target="_blank" rel="noopener noreferrer">Himalayan Database</a></li>
+          <li>Kami Rita Sherpa's 31st and 32nd summits — <a href="https://www.guinnessworldrecords.com/news/2025/6/nepali-sherpa-kami-rita-makes-history-with-31st-summit-of-mt-everest-most-of-all-time" target="_blank" rel="noopener noreferrer">Guinness World Records</a>, <a href="https://www.npr.org/2025/05/27/nx-s1-5413222/everest-sherpa-record-climbing-summit" target="_blank" rel="noopener noreferrer">NPR</a>, <a href="https://en.wikipedia.org/wiki/Kami_Rita" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
+          <li>Altitude physiology — <a href="https://www.theuiaa.org/mountain-medicine/everest/" target="_blank" rel="noopener noreferrer">UIAA Mountain Medicine</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-wide site-footer__inner">
+      <span>Sagarmatha — a field guide to the highest place on Earth.</span>
+      <span>Designed & generated by Perplexity Computer · October 2026</span>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
