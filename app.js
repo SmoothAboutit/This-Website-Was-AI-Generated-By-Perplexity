@@ -290,5 +290,23 @@
     { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
   );
 
-  document.querySelectorAll('.reveal').forEach((n) => observer.observe(n));
+  const revealAll = () =>
+    document.querySelectorAll('.reveal').forEach((n) => observer.observe(n));
+
+  /* Entry gate: reveal content only once the gate is dismissed */
+  const gate = document.querySelector('[data-entry-gate]');
+  const enterButton = gate && gate.querySelector('[data-gate-enter]');
+
+  if (gate && enterButton) {
+    enterButton.focus();
+    const dismissGate = () => {
+      document.documentElement.removeAttribute('data-gate-closed');
+      gate.setAttribute('data-hidden', '');
+      window.setTimeout(() => gate.remove(), 520);
+      revealAll();
+    };
+    enterButton.addEventListener('click', dismissGate, { once: true });
+  } else {
+    revealAll();
+  }
 })();

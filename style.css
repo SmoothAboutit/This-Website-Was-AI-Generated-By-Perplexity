@@ -880,3 +880,83 @@
     transform: none;
   }
 }
+
+/* ============ Entry gate ============ */
+html[data-gate-closed] { overflow: hidden; }
+
+.entry-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: var(--space-6);
+  text-align: center;
+  background:
+    radial-gradient(120% 90% at 50% 8%, rgba(232, 168, 82, 0.10), transparent 55%),
+    linear-gradient(180deg, rgba(7, 11, 20, 0.86), rgba(7, 11, 20, 0.96)),
+    url("assets/hero-everest.webp") center 30% / cover no-repeat;
+  transition: opacity 480ms ease, visibility 480ms ease;
+}
+
+.entry-gate[data-hidden] {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.entry-gate__inner {
+  max-width: 34rem;
+  animation: gate-rise 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes gate-rise {
+  from { opacity: 0; transform: translateY(18px); }
+}
+
+.entry-gate__kicker {
+  color: var(--color-accent);
+  text-shadow: 0 1px 14px rgba(7, 11, 20, 0.9), 0 1px 3px rgba(7, 11, 20, 0.95);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-4);
+}
+
+.entry-gate__title {
+  font-family: var(--font-display);
+  color: #f2ede4;
+  font-size: clamp(1.75rem, 1.2rem + 2.6vw, 2.75rem);
+  line-height: 1.08;
+  font-weight: var(--font-medium);
+  margin-bottom: var(--space-4);
+  text-wrap: balance;
+}
+
+.entry-gate__text {
+  color: rgba(237, 232, 223, 0.72);
+  line-height: 1.65;
+  font-size: var(--text-base);
+  margin-bottom: var(--space-8);
+}
+
+.entry-gate__button {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--font-bold);
+  color: #f2ede4;
+  background: transparent;
+  border: 1px solid rgba(232, 168, 82, 0.55);
+  border-radius: 999px;
+  padding: 0.8rem 2.1rem;
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.entry-gate__button:hover,
+.entry-gate__button:focus-visible {
+  background: rgba(232, 168, 82, 0.14);
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
+}
